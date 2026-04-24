@@ -244,7 +244,7 @@ h2, h3, h4, h5 {
 }
 
 .prenotazione-sfondo {
-  background-image: url("/img/serviziBackground1.jpg");
+  background-image: url("img/serviziBackground1.jpg");
 
   background-attachment: fixed;   /* 👈 effetto parallax */
   background-position: center;
