@@ -239,20 +239,24 @@ h2, h3, h4, h5 {
   background-image: url("img/finale.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   transition: transform 0.3s ease;
 }
 
 .prenotazione-sfondo {
   background-image: url("img/serviziBackground1.jpg");
 
-  background-attachment: fixed;   /* 👈 effetto parallax */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   min-height: 50vh;
   width: 100%;
+}
+@media (min-width: 1025px) {
+  .parallax-section,
+  .prenotazione-sfondo {
+    background-attachment: fixed;
+  }
 }
 @media (max-width: 768px) {
   .prenotazione-sfondo {
