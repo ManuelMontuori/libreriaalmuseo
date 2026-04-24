@@ -239,11 +239,6 @@ h2, h3, h4, h5 {
   background-image: url("img/finale.jpg");
   background-size: cover;
   background-position: center;
-    min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   transition: transform 0.3s ease;
 }
 
@@ -253,10 +248,9 @@ h2, h3, h4, h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  min-height: 50vh;
+  width: 100%;
 }
 @media (min-width: 1025px) {
   .parallax-section,
