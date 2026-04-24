@@ -239,6 +239,11 @@ h2, h3, h4, h5 {
   background-image: url("img/finale.jpg");
   background-size: cover;
   background-position: center;
+    min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transition: transform 0.3s ease;
 }
 
@@ -248,9 +253,10 @@ h2, h3, h4, h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  min-height: 50vh;
-  width: 100%;
+    min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1025px) {
   .parallax-section,
@@ -299,7 +305,7 @@ h2, h3, h4, h5 {
 #scrollTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 20px;
 
   width: 45px;
   height: 45px;
