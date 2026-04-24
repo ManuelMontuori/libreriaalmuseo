@@ -1,0 +1,335 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Playflair Display', serif;
+  font-weight: 600;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+
+::selection {
+  background-color: #5e8bed;
+  color: white;
+}
+
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.7)
+              ),
+              url('img/hero.jpg') center/cover no-repeat;
+}
+/* CARD BASE */
+.custom-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFETTO MODERNO */
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* IMMAGINE */
+.card-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* ZOOM IMAGE ON HOVER */
+.custom-card:hover img {
+  transform: scale(1.1);
+}
+
+/* TESTO */
+.custom-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-card h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.custom-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* le colonne diventano flex container */
+.col-md-4.d-flex {
+  display: flex;
+}
+
+/* card sempre uguale in altezza */
+.custom-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* immagine con altezza fissa */
+.card-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+/* corpo che riempie lo spazio */
+.custom-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* link base */
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+/* hover elegante */
+.navbar .nav-link:hover {
+  background: #5e8bed;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.btn-costumer {
+  transition: all 0.25s ease;
+  border-radius: 8px;
+  background-color: #5e8bed;
+}
+
+.btn-costumer:hover {
+  transform: scale(1.05);
+  background-color: #326ded;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.partner-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* .form-contatti-home {
+  background: #5e8bed;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 25px;
+  margin-bottom: 12px;
+} */
+
+.form-contatti-home {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border-top-left-radius: 85px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 10px;
+  padding: 25px;
+  }
+
+.form-contatti-home label {
+  color: #bdc3c7;
+}
+
+
+.form-contatti-home input,
+.form-contatti-home textarea {
+  background: #34495e;
+  color: #ecf0f1;
+  border: 1px solid #7f8c8d;
+}
+.form-contatti-home .form-select {
+  background-color: #34495e !important;
+  color: #ecf0f1 !important;
+  border: 1px solid #7f8c8d;
+}
+
+.form-contatti-home input::-webkit-input-placeholder,
+.form-contatti-home textarea::-webkit-input-placeholder {
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.form-contatti-home input::-moz-placeholder,
+.form-contatti-home textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+
+.form-contatti-home input:-ms-input-placeholder,
+.form-contatti-home textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-contatti-home input::placeholder,
+.form-contatti-home textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+ 
+
+
+.custom-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.parallax-section {
+  height: 600px;
+  background-image: url("img/finale.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: transform 0.3s ease;
+}
+
+.prenotazione-sfondo {
+  background-image: url("/img/serviziBackground1.jpg");
+
+  background-attachment: fixed;   /* 👈 effetto parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 50vh;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .prenotazione-sfondo {
+    background-attachment: scroll;
+  }
+}
+
+
+.footer {
+  font-size: 14px;
+}
+
+.footer h5 {
+  margin-bottom: 15px;
+}
+
+.footer i {
+  margin-right: 6px;
+  color: #bbb;
+}
+
+.footer-item {
+  margin-bottom: 0.25rem;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer a:hover {
+  transform: scale(1.06);
+  opacity: 0.85;
+}
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background: #2c3e50;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  #scrollTopBtn {
+    display: none;
+  }
+}
