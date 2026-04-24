@@ -258,9 +258,10 @@ h2, h3, h4, h5 {
     background-attachment: fixed;
   }
 }
-@media (max-width: 1024px) {
-  .prenotazione-sfondo {
-    background-attachment: scroll;
+@media (max-width: 1366px) {
+  .prenotazione-sfondo,
+  .parallax-section {
+    background-attachment: scroll !important;
   }
 }
 
