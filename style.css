@@ -264,6 +264,19 @@ h2, h3, h4, h5 {
     background-attachment: scroll !important;
   }
 }
+/* 1. Blocca lo scroll orizzontale su tutto il sito */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Sistema le Row di Bootstrap che spesso creano la fascia bianca */
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 
 
 .footer {
