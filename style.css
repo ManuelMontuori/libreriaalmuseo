@@ -19,6 +19,15 @@ h2, h3, h4, h5 {
   color: white;
 }
 
+.hero h1::selection,
+.hero h2::selection, 
+.hero p::selection, 
+.hero a::selection,
+.hero i::selection {
+  background-color: rgb(172, 128, 88);
+  color: black;
+}
+
 
 .hero {
   height: 80vh;
@@ -26,7 +35,7 @@ h2, h3, h4, h5 {
                 rgba(0,0,0,0.4),
                 rgba(0,0,0,0.7)
               ),
-              url('img/hero.jpg') center/cover no-repeat;
+              url('img/provaHero.webp') center/cover no-repeat;
 }
 /* CARD BASE */
 .custom-card {
@@ -236,14 +245,14 @@ h2, h3, h4, h5 {
 
 .parallax-section {
   height: 600px;
-  background-image: url("img/finale.jpg");
+  background-image: url("img/finale.webp");
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease;
 }
 
 .prenotazione-sfondo {
-  background-image: url("img/serviziBackground1.jpg");
+  background-image: url("img/serviziBackground1.webp");
 
   background-position: center;
   background-repeat: no-repeat;
@@ -313,7 +322,7 @@ html, body {
 #scrollTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 40px;
 
   width: 45px;
   height: 45px;
