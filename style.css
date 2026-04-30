@@ -30,7 +30,7 @@ h3, h4, h5 {
 
 
 .hero {
-  height: 80vh;
+  min-height: 80vh;
   background: linear-gradient(
                 rgba(0,0,0,0.4),
                 rgba(0,0,0,0.7)
@@ -40,16 +40,19 @@ h3, h4, h5 {
 /* CARD BASE */
 .custom-card {
   background: white;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+
 }
 
 /* HOVER EFFETTO MODERNO */
 .custom-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* IMMAGINE */
@@ -92,18 +95,7 @@ h3, h4, h5 {
   display: flex;
 }
 
-/* card sempre uguale in altezza */
-.custom-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
 
-/* immagine con altezza fissa */
-.card-img {
-  height: 220px;
-  overflow: hidden;
-}
 
 /* corpo che riempie lo spazio */
 .custom-card .card-body {
@@ -298,10 +290,6 @@ h3, h4, h5 {
   transition: 0.3s ease;
 }
 
-.custom-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
 
 .parallax-section {
   height: 600px;
@@ -415,11 +403,6 @@ html, body {
   transform: scale(1.1);
 }
 
-@media (min-width: 768px) {
-  #scrollTopBtn {
-    display: none;
-  }
-}
 
 
 
