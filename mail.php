@@ -22,7 +22,7 @@ try {
     $mail->SMTPAuth = true;
 
     $mail->Username = 'info@almuseo.it';
-    $mail->Password = 'malecon76';
+    $mail->Password = 'ForzaNapoli1926!';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
