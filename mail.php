@@ -8,33 +8,33 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
 
-// ✅ TIPO FORM
+// TIPO FORM
 $formType = $_POST['form_type'] ?? '';
 
-// ✅ CREA OGGETTO MAIL
+// CREA OGGETTO MAIL
 $mail = new PHPMailer(true);
 
 try {
 
-    // ✅ CONFIG SMTP ARUBA
+    //  CONFIG SMTP ARUBA
     $mail->isSMTP();
     $mail->Host = 'smtps.aruba.it';
     $mail->SMTPAuth = true;
 
-    $mail->Username = 'info@manuelmontuori.it';
-    $mail->Password = 'PasswordTest01!';
+    $mail->Username = 'info@almuseo.it';
+    $mail->Password = 'malecon76';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
-    $mail->setFrom('info@manuelmontuori.it', 'Sito Web');
-    $mail->addAddress('info@manuelmontuori.it');
+    $mail->setFrom('info@almuseo.it', 'Sito Web');
+    $mail->addAddress('info@almuseo.it');
 
     $mail->isHTML(true);
 
-    // ✅ ===============================
-    // ✅ FORM CONTATTI (GIÀ ESISTENTE)
-    // ✅ ===============================
+    //  ===============================
+    //          FORM CONTATTI 
+    //  ===============================
     if ($formType === 'contatti') {
 
         $nome = htmlspecialchars($_POST['nome'] ?? '');
@@ -81,9 +81,9 @@ try {
 
     }
 
-    // ✅ ===============================
-    // ✅ NUOVO FORM PRENOTAZIONE LIBRI
-    // ✅ ===============================
+    //  ===============================
+    //   FORM PRENOTAZIONE LIBRI
+    //  ===============================
     elseif ($formType === 'prenotazione') {
 
         $nome = htmlspecialchars($_POST['nome'] ?? '');
@@ -128,7 +128,7 @@ try {
             <p><b>Spedizione:</b> $spedizione</p>
         ";
 
-        // ✅ aggiunge indirizzo solo se serve
+        // aggiunge indirizzo solo se serve
         if ($spedizione === 'SI') {
             $mail->Body .= "<p><b>Indirizzo:</b> $indirizzo</p>";
         }
@@ -155,7 +155,7 @@ try {
         exit;
     }
 
-    // ✅ INVIO
+    // INVIO
     $mail->send();
     echo "OK";
 
