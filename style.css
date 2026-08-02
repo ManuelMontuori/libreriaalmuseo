@@ -1,3 +1,7 @@
+:root {
+  --primary: #5e8bed;
+  --secondary: #ff7a18;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -29,6 +33,17 @@ h3, h4, h5 {
 }
 
 
+.btn-dark {
+  background: #5e8bed;
+  border: none;
+}
+
+.btn-dark:hover {
+  background: var(--secondary);
+}
+
+
+
 .hero {
   min-height: 80vh;
   background: linear-gradient(
@@ -46,7 +61,6 @@ h3, h4, h5 {
   flex-direction: column;
   transition: 0.3s ease;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-
 }
 
 /* HOVER EFFETTO MODERNO */
@@ -140,10 +154,12 @@ h3, h4, h5 {
 .step-card {
   position: relative;
   transition: all 0.25s ease;
+  border: 1px solid #000000 !important;  
 }
 
 .step-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important; 
 }
 
 /* Cerchio numero */
@@ -179,7 +195,7 @@ h3, h4, h5 {
   height: 60px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   opacity: 0.7;
   transition: all 0.3s ease;
 }
@@ -300,7 +316,7 @@ h3, h4, h5 {
 }
 
 .prenotazione-sfondo {
-  background-image: url("img/serviziBackground1.webp");
+  background-image: url("img/serviziBackground.webp");
 
   background-position: center;
   background-repeat: no-repeat;
@@ -661,3 +677,52 @@ html, body {
   }
 }
 
+
+
+
+/* CTA prenotazione in evidenza */
+.booking-priority-box {
+  position: relative;
+  background: #fff;
+  border: 2px solid #25D36633;
+  border-radius: 20px;
+  padding: 32px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 760px;
+  margin: 0 auto;
+  transition: all 0.25s ease;
+}
+
+.booking-priority-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.booking-badge {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.whatsapp-cta {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+}
+
+.whatsapp-cta:hover {
+  background-color: #1ebe5d;
+  border-color: #1ebe5d;
+  color: #fff;
+  transform: scale(1.03);
+}
